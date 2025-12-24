@@ -1,26 +1,97 @@
-body{
-  background-color: aliceblue;
-  width: 300px;
-  height: 200px;
-}
-
-.nav {
-    list-style: none;
-    padding: 10px;
-    background: black;
-    text-align: center;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.nav li{
-     display: inline-block;
-     margin: 4px;
+body{
+    background: rgb(26, 24, 24);
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
 }
-.nav a{
+.para{
+    font-weight: 500rem;
+    color: white;
+}
+nav{
+    width: 100%;
+    padding: 1rem 5%;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .nav-group{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.logo{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.nav-links li a{
+    position: relative;
+    font-size: 1.05rem;
+    font-weight: 500;
     text-decoration: none;
-    background: white;
-    padding: 8px 15px;
-    color: #000;
-    border: 1px solid white;
-   
+    color: white;
+    transition: 0.3s;
 }
-  
+.nav-link li a:hover {
+    color: rgb(255, 255, 0);
+    text-shadow: 0 0 10px rgb(255, 255, 0);
+}
+.btn{
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1rem;
+    background: rgb(50, 241, 40);
+    color: #0f1720;
+    box-shadow: 0 0 15px rgb(50, 241, 40);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background: skyblue;
+    box-shadow: 0 0 25px skyblue;
+}
+.paragraph-1{
+     text-align: center;
+     font-weight: 300px;
+}
+.grid-container{
+    display: block;
+    color: aqua;
+
+}
+.new{
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+.final-image{
+        border: 2px solid rgb(42, 225, 9);
+}
+.grid-container-2{
+    display: grid;
+    height: 203.208sspx;
+    width: 200px;
+    justify-content: start;
+}
+.grid-item{
+    background-color: aqua;
+    border: 1px solid rgb(49, 49, 37);
+    padding: 0%;
+    align-items: flex-start;
+    display: flex;
+}
